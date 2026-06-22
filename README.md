@@ -8,7 +8,7 @@ Aplikasi web sederhana untuk manajemen inventaris barang menggunakan **Express.j
 
 Aplikasi ini dapat diakses secara langsung di:
 
-### 🔗 [https://kliklop.com](https://kliklop.com)
+### 🔗 [https://klikklop.com](https://klikklop.com)
 
 > **Catatan**: Aplikasi berjalan di server production dengan Node.js dan MySQL.
 
