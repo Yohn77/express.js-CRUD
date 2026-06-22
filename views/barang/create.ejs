@@ -1,0 +1,61 @@
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header bg-white">
+                <h4 class="mb-0">
+                    <i class="bi bi-plus-circle"></i> Tambah Barang Baru
+                </h4>
+            </div>
+            <div class="card-body">
+                <form action="/barang/store" method="POST">
+                    <div class="mb-3">
+                        <label for="kode_barang" class="form-label">Kode Barang <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="kode_barang" name="kode_barang" required>
+                        <div class="form-text">Kode barang harus unik</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="nama_barang" class="form-label">Nama Barang <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="nama_barang" name="nama_barang" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="kategori" class="form-label">Kategori</label>
+                        <select class="form-select" id="kategori" name="kategori">
+                            <option value="">Pilih Kategori</option>
+                            <option value="Elektronik">Elektronik</option>
+                            <option value="Aksesoris">Aksesoris</option>
+                            <option value="Peralatan Kantor">Peralatan Kantor</option>
+                            <option value="Lainnya">Lainnya</option>
+                        </select>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="harga" class="form-label">Harga (Rp) <span class="text-danger">*</span></label>
+                            <input type="number" class="form-control" id="harga" name="harga" required min="0">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="stok" class="form-label">Stok</label>
+                            <input type="number" class="form-control" id="stok" name="stok" value="0" min="0">
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="deskripsi" class="form-label">Deskripsi</label>
+                        <textarea class="form-control" id="deskripsi" name="deskripsi" rows="3"></textarea>
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                        <a href="/barang" class="btn btn-secondary">
+                            <i class="bi bi-arrow-left"></i> Kembali
+                        </a>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="bi bi-save"></i> Simpan Barang
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
